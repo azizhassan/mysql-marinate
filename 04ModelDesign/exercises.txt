@@ -1,8 +1,8 @@
 1. When would you use a weak entity?
-
+1. You can use a weak entity when you have an identifying relationship with an owning entity. The example they use in the book is for a customer in a sales database. They are trying to store information on their child. They just use a first name because they assume the customer will not have more than one child with the same name. Or you can use the example of a Musician and the weak entity could be the name of an album. The musician will not have more than one album with the same name.
 
 2. Is it better to use entities instead of attributes?
-
+2. You need to use attributes with entities. This separates one entity from another. Without attributes entities wouldn’t be able to differentiate from one another.
 
 3. Alter and extend the music database ER model so that it can store 
 compilations, where a compilation is an album that contains tracks by two 
