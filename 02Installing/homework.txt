@@ -2,19 +2,25 @@ Homework for Chapter 2 of Learning MySQL (2006 edition), from p. 94:
 
 Exercises:
 1) What is command completion?
+1. Command completion is a shortcut to finish typing command line prompt. For example if you were in a directory and wanted to open another file or directory in it you could press tab to cycle through the names in the directory. If there was only one file or directory it would fill it in for you as well.  If you use a / followed by a corresponding letter it will show you all the files in directory that have that letter in it.
 
 2) What are the relative advantages of installing MySQL using the package,
+<<<<<<< HEAD
  directory archive (tarball or "no-install"), or compiled methods?
 
+=======
+ directory archive (tarball or "no-install", or compiled methods?
+2. The advantage of installing the MySQL package is that it installs the necessary users and groups. When I installed the package I thought I did something wrong when creating users or groups but it was because the packages take these steps for you.
+>>>>>>> 3521b7c16adfb57ac992df2ee3f476c1aaff2b35
 3) How do you verify the integrity of downloaded packages?
-
+3. I verified a package I download using a MD5 command. The website provided an identification number that matched the one returned from the command I entered.
 4) How do you add the MySQL bin directory to the operating system path?
-
+4. You add the MySQL bin to the directory to the operating system path by editing the ~/.bashrc shell configuration file with the text editor. You add the command line export path=$path:/usr/local/mysql/bin: to the bottom of the file. Afterwards use the source command to save the changes. 
 Additional Exercises (not in the book): 
 1) Document how you installed MySQL and any issues you came across with installation. 
  (The goal is to be easy to install it again on a similar machine.)
-
+1. When installing MySQL I installed a package. The package was easy to install using an installation wizard. Afterwards I had to use my command prompt to put in several codes to make sure it was working properly. The steps involved things like verifying the downloaded file, starting and stopping the server and seeing what directories were in my systems operations path. I had one major problem installing MySQL because after I installed the package I chose I installed an additional package called XAMPP. I thought I was going to require the other programs mentioned in the book. However I discovered for this course we will only be on MySQL.
 2) Document where important files should be.
-
+2. The important files are located in the bin directory. 
 Do not forget to do a pull request when your homework is complete.
 http://www.meetup.com/Virtual-Tech-Self-Study/messages/boards/thread/29963152/
