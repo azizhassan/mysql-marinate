@@ -1,13 +1,13 @@
 1. When would you use a weak entity?
 
-
+1.	You can use a weak entity when you have an identifying relationship with an owning entity. The example they use in the book is for a customer in a sales database. They are trying to store information on their child. They just use a first name because they assume the customer will not have more than one child with the same name. Or you can use the example of a Musician and the weak entity could be the name of an album. The musician will not have more than one album with the same name.
 2. Is it better to use entities instead of attributes?
 
-
+2.	You need to use attributes with entities. This separates one entity from another. Without attributes entities wouldn’t be able to differentiate from one another.
 3. Alter and extend the music database ER model so that it can store 
 compilations, where a compilation is an album that contains tracks by two 
 or more different artists. Explain what you changed and why.
-
+I'm adding a separate file.I added a multivalued attribute in the tracks for compilations. I also edited the diagram so that an album can feature more than one artist.
 4. Create an ER diagram for an online media store and explain your choices (e.g. why did you make X an entity and Y a relationship) using the following requirements:
  - There are two types of product: music CDs and video DVDs.
  - Customers can buy any number of each product.
@@ -15,7 +15,7 @@ or more different artists. Explain what you changed and why.
    and the price. Also store the number, title, and length (in seconds) 
    of each track on the CD.
  - For each video DVD, store the title the studio name, and the price.
-
+I'm adding a separate file. I had to add two additional entities to the model. One for tracks and one for the length of the cds.
 Tables 4-1 and 4-2 contain some sample data to help you better understand 
 the requirements.
 
